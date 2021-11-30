@@ -1,0 +1,61 @@
+\newpage\section{Basic Rummy}
+The following section outlines the most basic version of Rummy that I can think of, which uses most of the stuff detailed above.
+
+\subsection{Requirements}
+\begin{description}
+    \item[Number of Players:] 2--6. 
+    \item[Cards:] A standard deck of 52 playing cards (No Jokers).
+    \item[Cards Dealt:] 7.
+    \item[Requirements for Going Out:] None.
+\end{description}
+
+\subsection{Setup}
+\begin{enumerate}
+\item Decide on an amount of points to play to. 100 is a common choice.
+\item Shuffle the cards thoroughly and deal them one at a time to each player, until everyone has 7 cards.
+\item Place the remainder of the cards in the centre of the table to form the supply.
+\item Turn over the top card and set it next to the supply to form the discard.
+\item The game is now ready to begin, starting with the player left of the dealer.
+\end{enumerate}
+\subsection{Gameplay}
+Every turn has the same basic structure:
+\begin{enumerate}
+    \item Draw a card.
+    \item Play any number of melds.
+    \item Lay off any number of cards.
+    \item Discard a card if possible.
+\end{enumerate}
+
+\subsubsection{Drawing Cards}
+At the start of your turn, you have two choices when it comes to drawing cards: you can either pull the topmost card from the supply, or the topmost one face up in the discard.
+Note that this step is \textit{not} optional.
+\subsubsection{Playing Melds}
+After drawing a card, you may play any number of melds from your hand. Valid melds include \textit{Sets} of 3--4 cards of the same rank and \textit{Runs} of 3 or more sequential cards in the same suit.
+
+For the purposes of sets, aces are considered to occur after kings, meaning $\clubsuit Q, \clubsuit K, \clubsuit A$ is a valid set, but $\diamondsuit A, \diamondsuit 2, \diamondsuit 3$ is not.
+\subsubsection{Laying off Cards}
+After playing your first meld, you can begin laying off cards to any of the existing melds on the table, including those of your opponent.
+The goal of the game is to get rid of your cards after all, so dumping your unwanted cards onto any meld you can see is beneficial.
+\subsubsection{Discarding a Card}
+At the end of your turn---if you have any cards left---you discard a card onto the discard pile, and give the turn to the player to the left of you.
+\subsubsection{Going Out}
+If playing a meld, laying off cards, or discarding a card would leave you with an empty hand, you've successfully \textit{gone out}, and the round is immediately over.
+
+\subsubsection{Declaring Rummy}
+If your hand consists entirely of valid melds, and you have neither played melds nor laid off any cards in any of your turns, then you can choose to \textit{declare Rummy}. To do so, say the word ``Rummy'' out loud and place your entire hand onto the table for scrutiny, optionally discarding a card as normal.
+
+If declared valid by everyone at the table, your effective score for the round is doubled.
+
+\subsection{Scoring}
+Once a player goes out it's time to score.
+The winner counts up all the cards left over in the other players' hands.
+Whichever player first reaches the agreed-upon amount of points wins the game.
+
+The cards are valued as follows:
+\begin{center}
+    \begin{tabular}{rcl}
+        2--10 & = & Printed value\\
+        J,Q,K & = & 10\\
+        A & = & 15
+    \end{tabular}
+\end{center}
