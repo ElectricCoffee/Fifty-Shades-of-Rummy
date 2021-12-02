@@ -5,3 +5,4 @@
 *.pdf
 *.synctex.gz
 *_temp.tex
+*.toc
